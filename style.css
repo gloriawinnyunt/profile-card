@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&display=swap');
+:root{
+    --dark-cyan:hsl(185, 75%, 39%);
+    --dark-blue:hsl(229, 23%, 23%);
+    --grayish-blue:hsl(227, 10%, 46%);
+    --dark-gray:hsl(0, 0%, 59%);
+}
+body{
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: 'Kumbh Sans', sans-serif;
+   
+}
+section{
+    background-color: var(--dark-cyan);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.card-container{
+    width: 300px;
+    height: 350px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+
+    overflow: hidden;
+    display: inline-block;
+}
+
+.upper-container{
+    height: 120px;
+    background: url(./images/bg-pattern-card.svg);
+}
+
+.image-container{
+    background: #fff;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    padding: 5px;
+    transform: translate(100px,80px);
+}
+.image-container img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.lower-container{
+    background: #fff;
+    height: 230px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.lower-container h4{
+    font-size: 16px;
+    line-height: .6;
+    font-weight: 900;
+}
+.lower-container span{
+    opacity: .6;
+    font-weight: lighter;
+    margin-left: 10px;
+}
+.lower-container p{
+    font-size: 14px;
+    opacity: .6;
+}
+.lower-container .social{
+    display: flex;
+    padding: 0 30px;
+}
+.lower-container .social div{
+    margin-right: 50px;
+}
+.lower-container .social div p{
+    font-size: 12px;
+    line-height: .1;
+}
+.circles .c1,
+.circles .c2{
+    position: absolute;
+}
+.circles .c1{
+    top: -300px;
+    left:-175px;
+}
+.circles .c2{
+    bottom: -300px;
+    right:-175px;
+}
+
+.attribution{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 20px;
+}
